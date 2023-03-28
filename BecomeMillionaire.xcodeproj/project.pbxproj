@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		28EBAB5C29D3246200959AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB5B29D3246200959AA8 /* AppDelegate.swift */; };
 		28EBAB5E29D3246200959AA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB5D29D3246200959AA8 /* SceneDelegate.swift */; };
-		28EBAB6029D3246200959AA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB5F29D3246200959AA8 /* ViewController.swift */; };
-		28EBAB6329D3246200959AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB6129D3246200959AA8 /* Main.storyboard */; };
+		28EBAB6029D3246200959AA8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB5F29D3246200959AA8 /* MainViewController.swift */; };
 		28EBAB6529D3246300959AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB6429D3246300959AA8 /* Assets.xcassets */; };
 		28EBAB6829D3246300959AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB6629D3246300959AA8 /* LaunchScreen.storyboard */; };
+		28EBAB7729D324F900959AA8 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB7129D324F800959AA8 /* lose.mp3 */; };
+		28EBAB7829D324F900959AA8 /* winGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB7229D324F800959AA8 /* winGame.mp3 */; };
+		28EBAB7929D324F900959AA8 /* chosenAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB7329D324F800959AA8 /* chosenAnswer.mp3 */; };
+		28EBAB7A29D324F900959AA8 /* backgroundSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB7429D324F900959AA8 /* backgroundSound.mp3 */; };
+		28EBAB7B29D324F900959AA8 /* timerForResponse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB7529D324F900959AA8 /* timerForResponse.mp3 */; };
+		28EBAB7C29D324F900959AA8 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB7629D324F900959AA8 /* win.mp3 */; };
+		28EBAB7E29D3328100959AA8 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB7D29D3328100959AA8 /* RulesViewController.swift */; };
+		28EBAB8029D3336400959AA8 /* RulesText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB7F29D3336400959AA8 /* RulesText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28EBAB5829D3246200959AA8 /* BecomeMillionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BecomeMillionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28EBAB5B29D3246200959AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28EBAB5D29D3246200959AA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28EBAB5F29D3246200959AA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28EBAB6229D3246200959AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28EBAB5F29D3246200959AA8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		28EBAB6429D3246300959AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28EBAB6729D3246300959AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28EBAB6929D3246300959AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28EBAB7129D324F800959AA8 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		28EBAB7229D324F800959AA8 /* winGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winGame.mp3; sourceTree = "<group>"; };
+		28EBAB7329D324F800959AA8 /* chosenAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chosenAnswer.mp3; sourceTree = "<group>"; };
+		28EBAB7429D324F900959AA8 /* backgroundSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundSound.mp3; sourceTree = "<group>"; };
+		28EBAB7529D324F900959AA8 /* timerForResponse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timerForResponse.mp3; sourceTree = "<group>"; };
+		28EBAB7629D324F900959AA8 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		28EBAB7D29D3328100959AA8 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		28EBAB7F29D3336400959AA8 /* RulesText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,36 @@
 			children = (
 				28EBAB5B29D3246200959AA8 /* AppDelegate.swift */,
 				28EBAB5D29D3246200959AA8 /* SceneDelegate.swift */,
-				28EBAB5F29D3246200959AA8 /* ViewController.swift */,
-				28EBAB6129D3246200959AA8 /* Main.storyboard */,
+				28EBAB5F29D3246200959AA8 /* MainViewController.swift */,
+				28EBAB7D29D3328100959AA8 /* RulesViewController.swift */,
+				28EBAB7F29D3336400959AA8 /* RulesText.swift */,
 				28EBAB6429D3246300959AA8 /* Assets.xcassets */,
 				28EBAB6629D3246300959AA8 /* LaunchScreen.storyboard */,
+				28EBAB6F29D324C200959AA8 /* Resourses */,
 				28EBAB6929D3246300959AA8 /* Info.plist */,
 			);
 			path = BecomeMillionaire;
+			sourceTree = "<group>";
+		};
+		28EBAB6F29D324C200959AA8 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB7029D324E000959AA8 /* Sounds */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		28EBAB7029D324E000959AA8 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB7429D324F900959AA8 /* backgroundSound.mp3 */,
+				28EBAB7329D324F800959AA8 /* chosenAnswer.mp3 */,
+				28EBAB7129D324F800959AA8 /* lose.mp3 */,
+				28EBAB7529D324F900959AA8 /* timerForResponse.mp3 */,
+				28EBAB7629D324F900959AA8 /* win.mp3 */,
+				28EBAB7229D324F800959AA8 /* winGame.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +162,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EBAB7C29D324F900959AA8 /* win.mp3 in Resources */,
+				28EBAB7A29D324F900959AA8 /* backgroundSound.mp3 in Resources */,
+				28EBAB7B29D324F900959AA8 /* timerForResponse.mp3 in Resources */,
+				28EBAB7829D324F900959AA8 /* winGame.mp3 in Resources */,
 				28EBAB6829D3246300959AA8 /* LaunchScreen.storyboard in Resources */,
+				28EBAB7929D324F900959AA8 /* chosenAnswer.mp3 in Resources */,
+				28EBAB7729D324F900959AA8 /* lose.mp3 in Resources */,
 				28EBAB6529D3246300959AA8 /* Assets.xcassets in Resources */,
-				28EBAB6329D3246200959AA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28EBAB6029D3246200959AA8 /* ViewController.swift in Sources */,
+				28EBAB6029D3246200959AA8 /* MainViewController.swift in Sources */,
+				28EBAB8029D3336400959AA8 /* RulesText.swift in Sources */,
 				28EBAB5C29D3246200959AA8 /* AppDelegate.swift in Sources */,
+				28EBAB7E29D3328100959AA8 /* RulesViewController.swift in Sources */,
 				28EBAB5E29D3246200959AA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28EBAB6129D3246200959AA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28EBAB6229D3246200959AA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28EBAB6629D3246300959AA8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +328,9 @@
 				INFOPLIST_FILE = BecomeMillionaire/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Saf.BecomeMillionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +359,9 @@
 				INFOPLIST_FILE = BecomeMillionaire/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +369,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Saf.BecomeMillionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
