@@ -102,7 +102,10 @@ class MainViewController: UIViewController {
     }
     
     @objc private func startGameTapButton() {
-        
+        let rootVC = GameViewController()
+        let navVC = UINavigationController(rootViewController: rootVC)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true)
     }
     
     private func setupView() {
