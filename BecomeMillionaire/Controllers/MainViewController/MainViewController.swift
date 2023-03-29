@@ -9,40 +9,36 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    let backgroundView: UIImageView = {
+    private let backgroundView: UIImageView = {
         let background = UIImageView()
         background.image = UIImage(named: "Frame")
-        background.translatesAutoresizingMaskIntoConstraints = false
         return background
     }()
     
-    let titleLabel: UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "The Game"
         label.textColor = .yellow
         // проверить шрифт
         label.font = UIFont(name: "Avenir Next Bold", size: 30)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let logoImageView: UIImageView = {
+    private let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Logomainview")
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    let welcomeLabel: UILabel = {
+    private let welcomeLabel: UILabel = {
         let label = UILabel()
         label.text = "welcome"
         label.textColor = .white
         label.font = UIFont(name: "Avenir Next", size: 30)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let nameLabel: UILabel = {
+    private let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "to Who Wants to be a Millionare"
         label.textColor = .white
@@ -51,22 +47,20 @@ class MainViewController: UIViewController {
         label.textAlignment = .center
         label.numberOfLines = 2
         label.minimumScaleFactor = 0.5
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    lazy var rulesButton: UIButton = {
+    private lazy var rulesButton: UIButton = {
         let button = UIButton()
         button.setTitle("Rules of the game", for: .normal)
         // подобрать цвет
         button.tintColor = .cyan
         button.titleLabel?.font = UIFont(name: "Avenir Next Bold", size: 35)
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(rulesTapButton), for: .touchUpInside)
         return button
     }()
     
-    lazy var startButton: UIButton = {
+    private lazy var startButton: UIButton = {
         let button = UIButton()
         button.setTitle("Start", for: .normal)
         // подобрать цвет
@@ -74,7 +68,6 @@ class MainViewController: UIViewController {
         button.backgroundColor = .green
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont(name: "Avenir Next Bold", size: 50)
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(startGameTapButton), for: .touchUpInside)
         return button
     }()
@@ -82,8 +75,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
-        setupConstraints()
+        setupUI()
     }
 
     @objc private func rulesTapButton() {
@@ -108,17 +100,18 @@ class MainViewController: UIViewController {
         present(navVC, animated: true)
     }
     
-    private func setupView() {
-        view.addSubview(backgroundView)
-        view.addSubview(titleLabel)
-        view.addSubview(logoImageView)
-        view.addSubview(welcomeLabel)
-        view.addSubview(nameLabel)
-        view.addSubview(rulesButton)
-        view.addSubview(startButton)
-    }
-    
-    private func setupConstraints() {
+    private func setupUI() {
+        let subviews = [backgroundView,
+                        titleLabel,
+                        logoImageView,
+                        welcomeLabel,
+                        nameLabel,
+                        rulesButton,
+                        startButton]
+        subviews.forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview($0)
+        }
         
         NSLayoutConstraint.activate([
             backgroundView.topAnchor.constraint(equalTo: view.topAnchor),

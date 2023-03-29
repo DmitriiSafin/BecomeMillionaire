@@ -34,6 +34,8 @@ class GameViewController: UIViewController {
     private let gameManager = GameManager()
     private var currentQuestion: Question?
     
+    private var questionView = QuestionView()
+    
     private var isGameOver: Bool = false {
         didSet {
             if isGameOver {
@@ -44,6 +46,27 @@ class GameViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+    
     //private func showGameProcess(answerstatus: )
+    
+    private func setupUI() {
+        let subviews = [questionView]
+        
+        subviews.forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview($0)
+        }
+        
+        NSLayoutConstraint.activate([
+            questionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            questionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
+            questionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
+            questionView.heightAnchor.constraint(equalToConstant: 150)
+        ])
+    }
     
 }

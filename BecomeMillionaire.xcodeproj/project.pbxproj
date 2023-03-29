@@ -24,6 +24,8 @@
 		28EBAB8429D3529000959AA8 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 28EBAB8329D3529000959AA8 /* questions.json */; };
 		28EBAB8929D3531500959AA8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB8829D3531500959AA8 /* Question.swift */; };
 		28EBAB8B29D357C700959AA8 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB8A29D357C600959AA8 /* GameManager.swift */; };
+		28EBAB8E29D46FD700959AA8 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB8D29D46FD700959AA8 /* QuestionView.swift */; };
+		28EBAB9129D47E0100959AA8 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9029D47E0100959AA8 /* AnswerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		28EBAB8329D3529000959AA8 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		28EBAB8829D3531500959AA8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		28EBAB8A29D357C600959AA8 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		28EBAB8D29D46FD700959AA8 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		28EBAB9029D47E0100959AA8 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +118,9 @@
 		28EBAB8529D352B000959AA8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				28EBAB5F29D3246200959AA8 /* MainViewController.swift */,
-				28EBAB8129D348EA00959AA8 /* GameViewController.swift */,
-				28EBAB7D29D3328100959AA8 /* RulesViewController.swift */,
-				28EBAB7F29D3336400959AA8 /* RulesText.swift */,
+				28EBAB9229D4801300959AA8 /* MainViewController */,
+				28EBAB8C29D46F8600959AA8 /* GameViewController */,
+				28EBAB8F29D4704900959AA8 /* RulesViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +141,33 @@
 				28EBAB8A29D357C600959AA8 /* GameManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		28EBAB8C29D46F8600959AA8 /* GameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB8129D348EA00959AA8 /* GameViewController.swift */,
+				28EBAB8D29D46FD700959AA8 /* QuestionView.swift */,
+				28EBAB9029D47E0100959AA8 /* AnswerView.swift */,
+			);
+			path = GameViewController;
+			sourceTree = "<group>";
+		};
+		28EBAB8F29D4704900959AA8 /* RulesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB7D29D3328100959AA8 /* RulesViewController.swift */,
+				28EBAB7F29D3336400959AA8 /* RulesText.swift */,
+			);
+			path = RulesViewController;
+			sourceTree = "<group>";
+		};
+		28EBAB9229D4801300959AA8 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB5F29D3246200959AA8 /* MainViewController.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,11 +249,13 @@
 			files = (
 				28EBAB6029D3246200959AA8 /* MainViewController.swift in Sources */,
 				28EBAB8B29D357C700959AA8 /* GameManager.swift in Sources */,
+				28EBAB9129D47E0100959AA8 /* AnswerView.swift in Sources */,
 				28EBAB8029D3336400959AA8 /* RulesText.swift in Sources */,
 				28EBAB5C29D3246200959AA8 /* AppDelegate.swift in Sources */,
 				28EBAB7E29D3328100959AA8 /* RulesViewController.swift in Sources */,
 				28EBAB8229D348EA00959AA8 /* GameViewController.swift in Sources */,
 				28EBAB8929D3531500959AA8 /* Question.swift in Sources */,
+				28EBAB8E29D46FD700959AA8 /* QuestionView.swift in Sources */,
 				28EBAB5E29D3246200959AA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

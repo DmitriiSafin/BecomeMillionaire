@@ -9,7 +9,7 @@ import UIKit
 
 class RulesViewController: UIViewController {
     
-    let backgroundView: UIImageView = {
+    private let backgroundView: UIImageView = {
         let background = UIImageView()
         background.image = UIImage(named: "Frame")
         //background.contentMode = .scaleToFill
@@ -17,7 +17,7 @@ class RulesViewController: UIViewController {
         return background
     }()
     
-    let rulesTextView: UITextView = {
+    private let rulesTextView: UITextView = {
         let textView = UITextView()
         textView.font = .systemFont(ofSize: 20)
         textView.textColor = .white
