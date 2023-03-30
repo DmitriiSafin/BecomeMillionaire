@@ -73,7 +73,7 @@ class AnswerView: UIButton {
         }
     }
     
-    func updateGradienChosenAnswer() {
+    func updateGradientChosenAnswer() {
         gradientLayer.colors = [UIColor.gray.cgColor]
     }
     

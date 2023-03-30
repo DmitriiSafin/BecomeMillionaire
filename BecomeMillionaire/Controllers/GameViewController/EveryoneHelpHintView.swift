@@ -90,7 +90,37 @@ class EveryoneHelpHintView: UIView {
                     label.textColor = .white
                     return label
                 }()
+                
+                let progressBar = UIProgressView(progressViewStyle: .bar)
+                progressBar.layer.cornerRadius = 10
+                progressBar.clipsToBounds = true
+                progressBar.progress = Float(percent) / 100
+                
+                let horizontalStackView = UIStackView(arrangedSubviews: [lettersLabel, progressBar, percentLabel])
+                horizontalStackView.distribution = .fill
+                horizontalStackView.spacing = 20
+                horizontalStackView.heightAnchor.constraint(equalToConstant: 20).isActive = true
+                
+                progressBarsStackView.addArrangedSubview(horizontalStackView)
             }
+        }
+    }
+    
+    func showCustomAlert(for mainView: UIView) {
+        dropBackgroundShadow()
+        configureStackView()
+        frame = CGRect(x: 40, y: -320,
+                       width: mainView.bounds.size.width - 80, height: 320)
+        backgroundColor = .darkGray
+        layer.cornerRadius = 10
+        UIView.animate(withDuration: 0.3) {
+            self.center = mainView.center
+        }
+    }
+    
+    private func dropBackgroundShadow() {
+        UIView.animate(withDuration: 0.3) { [ weak self ] in
+            self?.backgroundView.alpha = 0.3
         }
     }
     
@@ -112,5 +142,21 @@ class EveryoneHelpHintView: UIView {
     
     private func setupUI() {
         layer.cornerRadius = 10
+        
+        let subviews = [backgroundView, progressBarsStackView, dismissButton]
+        subviews.forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            addSubview($0)
+        }
+        
+        NSLayoutConstraint.activate([
+            progressBarsStackView.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+            progressBarsStackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20),
+            progressBarsStackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
+            progressBarsStackView.bottomAnchor.constraint(equalTo: dismissButton.bottomAnchor, constant: -50),
+            
+            dismissButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
+            dismissButton.centerXAnchor.constraint(equalTo: centerXAnchor)
+        ])
     }
 }

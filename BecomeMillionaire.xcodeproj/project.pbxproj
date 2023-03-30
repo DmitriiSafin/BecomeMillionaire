@@ -27,6 +27,9 @@
 		28EBAB8E29D46FD700959AA8 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB8D29D46FD700959AA8 /* QuestionView.swift */; };
 		28EBAB9129D47E0100959AA8 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9029D47E0100959AA8 /* AnswerView.swift */; };
 		28EBAB9429D59BB100959AA8 /* EveryoneHelpHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9329D59BB100959AA8 /* EveryoneHelpHintView.swift */; };
+		28EBAB9729D5D3B000959AA8 /* GameProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9629D5D3B000959AA8 /* GameProgressViewController.swift */; };
+		28EBAB9929D5D47B00959AA8 /* ProgressImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9829D5D47B00959AA8 /* ProgressImage.swift */; };
+		28EBAB9C29D5EF0600959AA8 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		28EBAB8D29D46FD700959AA8 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		28EBAB9029D47E0100959AA8 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		28EBAB9329D59BB100959AA8 /* EveryoneHelpHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryoneHelpHintView.swift; sourceTree = "<group>"; };
+		28EBAB9629D5D3B000959AA8 /* GameProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProgressViewController.swift; sourceTree = "<group>"; };
+		28EBAB9829D5D47B00959AA8 /* ProgressImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImage.swift; sourceTree = "<group>"; };
+		28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,8 @@
 			children = (
 				28EBAB9229D4801300959AA8 /* MainViewController */,
 				28EBAB8C29D46F8600959AA8 /* GameViewController */,
+				28EBAB9529D5D38800959AA8 /* GameProgressViewController */,
+				28EBAB9A29D5EEDB00959AA8 /* CongratulationViewController */,
 				28EBAB8F29D4704900959AA8 /* RulesViewController */,
 			);
 			path = Controllers;
@@ -171,6 +179,23 @@
 				28EBAB5F29D3246200959AA8 /* MainViewController.swift */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		28EBAB9529D5D38800959AA8 /* GameProgressViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB9629D5D3B000959AA8 /* GameProgressViewController.swift */,
+				28EBAB9829D5D47B00959AA8 /* ProgressImage.swift */,
+			);
+			path = GameProgressViewController;
+			sourceTree = "<group>";
+		};
+		28EBAB9A29D5EEDB00959AA8 /* CongratulationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */,
+			);
+			path = CongratulationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EBAB9C29D5EF0600959AA8 /* CongratulationViewController.swift in Sources */,
 				28EBAB6029D3246200959AA8 /* MainViewController.swift in Sources */,
 				28EBAB8B29D357C700959AA8 /* GameManager.swift in Sources */,
 				28EBAB9129D47E0100959AA8 /* AnswerView.swift in Sources */,
@@ -257,9 +283,11 @@
 				28EBAB9429D59BB100959AA8 /* EveryoneHelpHintView.swift in Sources */,
 				28EBAB5C29D3246200959AA8 /* AppDelegate.swift in Sources */,
 				28EBAB7E29D3328100959AA8 /* RulesViewController.swift in Sources */,
+				28EBAB9929D5D47B00959AA8 /* ProgressImage.swift in Sources */,
 				28EBAB8229D348EA00959AA8 /* GameViewController.swift in Sources */,
 				28EBAB8929D3531500959AA8 /* Question.swift in Sources */,
 				28EBAB8E29D46FD700959AA8 /* QuestionView.swift in Sources */,
+				28EBAB9729D5D3B000959AA8 /* GameProgressViewController.swift in Sources */,
 				28EBAB5E29D3246200959AA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

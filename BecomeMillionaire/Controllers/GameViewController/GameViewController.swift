@@ -56,6 +56,7 @@ class GameViewController: UIViewController {
     private var currentQuestion: Question?
     private let questions = Question.getQuestions()
     private var questionView = QuestionView()
+    private var hintView = EveryoneHelpHintView()
     
     private let backgroundImageView = UIImageView(image: UIImage(named: "backgroundImage"))
     
@@ -72,6 +73,38 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    private func showCustomView(with percents: [String: Int]) {
+        hintView.configure(with: percents)
+        hintView.showCustomAlert(for: view)
+        view.addSubview(hintView)
+    }
+    
+    private func configureAnswersStackView(with answers: [String], correct: String) {
+        answers.forEach {
+            let answerView = AnswerView()
+            let optionLetter = gameManager.optionsLetters[answersStackView.arrangedSubviews.endIndex]
+            answerView.configure(with: $0, answerOption: optionLetter)
+            answerView.delegate = self
+            answersStackView.addArrangedSubview(answerView)
+        }
+    }
+    
+    private func isRight(userAnswer: String, correctAnswer: String) -> Bool {
+        timer.invalidate()
+        
+        if userAnswer == correctAnswer {
+            gameManager.playSound(type: .win)
+            DispatchQueue.main.asyncAfter(deadline: .now() + Constants.winTimeInterval) {
+                
+                self.answersStackView.isUserInteractionEnabled = true
+            }
+            gameManager.levelsCounter += 1
+            return true
+        } else {
+            return false
+        }
     }
     
     //private func showGameProcess(answerstatus: )
@@ -98,5 +131,24 @@ class GameViewController: UIViewController {
             questionView.heightAnchor.constraint(equalToConstant: 150)
         ])
     }
+    
+}
+
+
+extension GameViewController: AnswerViewDelegate {
+    func answerButtonTapped(with userAnswer: String, answerView: AnswerView) {
+        answerView.updateGradientChosenAnswer()
+        gameManager.playSound(type: .chosenAnswer)
+        answersStackView.isUserInteractionEnabled = false
+        hintsStackView.isUserInteractionEnabled = false
+        hintsStackView.alpha = 0.5
+        
+        Timer.scheduledTimer(withTimeInterval: Constants.chosenTime, repeats: false) {
+            [ weak self ] _ in
+            guard let correct = self?.currentQuestion?.correctAnswer else { return }
+            //let isRight = self.isRight(
+        }
+    }
+    
     
 }
