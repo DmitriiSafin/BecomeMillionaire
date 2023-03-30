@@ -27,14 +27,37 @@ class GameViewController: UIViewController {
         static let gameOverRightAnswerTime: TimeInterval = 4
     }
     
+    private var progressBar: UIProgressView = {
+        let progress = UIProgressView()
+        return progress
+    }()
+    
+    private var answersStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.spacing = 10
+        return stackView
+    }()
+    
+    private var hintsStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.alignment = .leading
+        stackView.distribution = .fillEqually
+        stackView.spacing = 10
+        return stackView
+    }()
+    
     private var isRightToMistake = false
-    private let questions = Question.getQuestions()
+    
     private var timer = Timer()
     private var gameOverTime: CFTimeInterval = 5
     private let gameManager = GameManager()
     private var currentQuestion: Question?
-    
+    private let questions = Question.getQuestions()
     private var questionView = QuestionView()
+    
+    private let backgroundImageView = UIImageView(image: UIImage(named: "backgroundImage"))
     
     private var isGameOver: Bool = false {
         didSet {
@@ -54,7 +77,9 @@ class GameViewController: UIViewController {
     //private func showGameProcess(answerstatus: )
     
     private func setupUI() {
-        let subviews = [questionView]
+        let subviews = [
+            backgroundImageView,
+            questionView]
         
         subviews.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -62,6 +87,11 @@ class GameViewController: UIViewController {
         }
         
         NSLayoutConstraint.activate([
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImageView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            backgroundImageView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
             questionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             questionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
             questionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),

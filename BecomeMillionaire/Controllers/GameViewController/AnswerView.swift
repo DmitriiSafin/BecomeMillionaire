@@ -7,11 +7,13 @@
 
 import UIKit
 
-protocol AnswerViewDelegate {
+protocol AnswerViewDelegate: AnyObject {
     func answerButtonTapped(with userAnswer: String, answerView: AnswerView)
 }
 
 class AnswerView: UIButton {
+    
+    weak var delegate: AnswerViewDelegate?
     
     private lazy var answerButton: UIButton = {
         let button = UIButton()
@@ -27,6 +29,21 @@ class AnswerView: UIButton {
         return label
     }()
     
+    lazy var gradientLayer: CAGradientLayer = {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.borderColor = UIColor.gray.cgColor
+        gradientLayer.borderWidth = 1
+        let colors: [UIColor] = [.gray, .black, .gray]
+        gradientLayer.colors = colors.map { $0.cgColor }
+        gradientLayer.startPoint = CGPoint(x: 0, y: 1)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 0)
+        layer.insertSublayer(gradientLayer, at: 0)
+        return gradientLayer
+    }()
+    
+    var option = String()
+    var title = String()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         dropShadow()
@@ -37,6 +54,40 @@ class AnswerView: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer.frame = bounds
+        optionAnswerLabel.text = option
+        answerButton.setTitle(title, for: .normal)
+    }
+    
+    @objc private func answerButtonTapped(_ sender: UIButton) {
+        delegate?.answerButtonTapped(with: title, answerView: self)
+    }
+    
+    func updateGradient(with isRight: Bool) {
+        if isRight {
+            gradientLayer.colors = [UIColor.green.cgColor]
+        } else {
+            gradientLayer.colors = [UIColor.red.cgColor]
+        }
+    }
+    
+    func updateGradienChosenAnswer() {
+        gradientLayer.colors = [UIColor.gray.cgColor]
+    }
+    
+    func configure(with bodyAnswer: String, answerOption: String) {
+        option = answerOption
+        title = bodyAnswer
+        answerButton.addTarget(self, action: #selector(answerButtonTapped), for: .touchUpInside)
+    }
+    
+    func fiftyOnFiftySetup() {
+        self.alpha = 0.5
+        answerButton.isEnabled = false
+    }
+    
     private func dropShadow() {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.5
@@ -45,6 +96,7 @@ class AnswerView: UIButton {
     }
     
     private func setupUI() {
+        layer.cornerRadius = 10
         let subviews = [optionAnswerLabel, answerButton]
         subviews.forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
