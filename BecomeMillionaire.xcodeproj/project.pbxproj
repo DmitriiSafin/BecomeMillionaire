@@ -30,6 +30,7 @@
 		28EBAB9729D5D3B000959AA8 /* GameProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9629D5D3B000959AA8 /* GameProgressViewController.swift */; };
 		28EBAB9929D5D47B00959AA8 /* ProgressImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9829D5D47B00959AA8 /* ProgressImage.swift */; };
 		28EBAB9C29D5EF0600959AA8 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */; };
+		28EBAB9F29D71BF000959AA8 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9E29D71BF000959AA8 /* GameOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		28EBAB9629D5D3B000959AA8 /* GameProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProgressViewController.swift; sourceTree = "<group>"; };
 		28EBAB9829D5D47B00959AA8 /* ProgressImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImage.swift; sourceTree = "<group>"; };
 		28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
+		28EBAB9E29D71BF000959AA8 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +95,6 @@
 				28EBAB8629D352D200959AA8 /* App */,
 				28EBAB8729D352EE00959AA8 /* Model */,
 				28EBAB8529D352B000959AA8 /* Controllers */,
-				28EBAB6429D3246300959AA8 /* Assets.xcassets */,
-				28EBAB6629D3246300959AA8 /* LaunchScreen.storyboard */,
 				28EBAB6F29D324C200959AA8 /* Resourses */,
 				28EBAB6929D3246300959AA8 /* Info.plist */,
 			);
@@ -105,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				28EBAB8329D3529000959AA8 /* questions.json */,
+				28EBAB6429D3246300959AA8 /* Assets.xcassets */,
 				28EBAB7029D324E000959AA8 /* Sounds */,
 			);
 			path = Resourses;
@@ -131,6 +132,7 @@
 				28EBAB9529D5D38800959AA8 /* GameProgressViewController */,
 				28EBAB9A29D5EEDB00959AA8 /* CongratulationViewController */,
 				28EBAB8F29D4704900959AA8 /* RulesViewController */,
+				28EBAB9D29D71BCB00959AA8 /* GameOverViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 			children = (
 				28EBAB5B29D3246200959AA8 /* AppDelegate.swift */,
 				28EBAB5D29D3246200959AA8 /* SceneDelegate.swift */,
+				28EBAB6629D3246300959AA8 /* LaunchScreen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -196,6 +199,14 @@
 				28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */,
 			);
 			path = CongratulationViewController;
+			sourceTree = "<group>";
+		};
+		28EBAB9D29D71BCB00959AA8 /* GameOverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				28EBAB9E29D71BF000959AA8 /* GameOverViewController.swift */,
+			);
+			path = GameOverViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				28EBAB8E29D46FD700959AA8 /* QuestionView.swift in Sources */,
 				28EBAB9729D5D3B000959AA8 /* GameProgressViewController.swift in Sources */,
 				28EBAB5E29D3246200959AA8 /* SceneDelegate.swift in Sources */,
+				28EBAB9F29D71BF000959AA8 /* GameOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

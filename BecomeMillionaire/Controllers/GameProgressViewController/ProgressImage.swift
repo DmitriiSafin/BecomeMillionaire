@@ -62,7 +62,7 @@ class ProgressImage: UIView {
             questionNumber.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
             questionNumber.centerYAnchor.constraint(equalTo: centerYAnchor),
             
-            winningSum.leftAnchor.constraint(equalTo: leftAnchor, constant: -15),
+            winningSum.rightAnchor.constraint(equalTo: rightAnchor, constant: -15),
             winningSum.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }

@@ -32,16 +32,12 @@ class RulesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
-        setupConstraints()
-    }
-    
-    private func setupView() {
-        view.addSubview(backgroundView)
-        view.addSubview(rulesTextView)
+        setupUI()
     }
 
-    private func setupConstraints() {
+    private func setupUI() {
+        view.addSubview(backgroundView)
+        view.addSubview(rulesTextView)
         
         NSLayoutConstraint.activate([
             backgroundView.topAnchor.constraint(equalTo: view.topAnchor),

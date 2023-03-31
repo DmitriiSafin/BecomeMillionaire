@@ -11,7 +11,7 @@ struct Question: Decodable {
     let level: Int
     let ask: String
     let correctAnswer: String
-    let wrongAnswers: [String]
+    var wrongAnswers: [String]
     
     static func getQuestions() -> [Question] {
         if let url = Bundle.main.url(forResource: "questions", withExtension: "json") {

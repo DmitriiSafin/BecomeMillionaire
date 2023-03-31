@@ -19,7 +19,6 @@ class MainViewController: UIViewController {
         let label = UILabel()
         label.text = "The Game"
         label.textColor = .yellow
-        // проверить шрифт
         label.font = UIFont(name: "Avenir Next Bold", size: 30)
         return label
     }()
@@ -53,7 +52,6 @@ class MainViewController: UIViewController {
     private lazy var rulesButton: UIButton = {
         let button = UIButton()
         button.setTitle("Rules of the game", for: .normal)
-        // подобрать цвет
         button.tintColor = .cyan
         button.titleLabel?.font = UIFont(name: "Avenir Next Bold", size: 35)
         button.addTarget(self, action: #selector(rulesTapButton), for: .touchUpInside)
@@ -63,7 +61,6 @@ class MainViewController: UIViewController {
     private lazy var startButton: UIButton = {
         let button = UIButton()
         button.setTitle("Start", for: .normal)
-        // подобрать цвет
         button.tintColor = .yellow
         button.backgroundColor = .green
         button.layer.cornerRadius = 10

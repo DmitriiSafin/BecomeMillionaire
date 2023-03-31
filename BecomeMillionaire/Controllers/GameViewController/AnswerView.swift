@@ -33,10 +33,11 @@ class AnswerView: UIButton {
         let gradientLayer = CAGradientLayer()
         gradientLayer.borderColor = UIColor.gray.cgColor
         gradientLayer.borderWidth = 1
-        let colors: [UIColor] = [.gray, .black, .gray]
+        let colors: [UIColor] = [#colorLiteral(red: 0.2530327737, green: 0.4159591794, blue: 0.5364745855, alpha: 1), #colorLiteral(red: 0.1300314665, green: 0.2300171852, blue: 0.3798839748, alpha: 1), #colorLiteral(red: 0.2530327737, green: 0.4159591794, blue: 0.5364745855, alpha: 1)]
         gradientLayer.colors = colors.map { $0.cgColor }
         gradientLayer.startPoint = CGPoint(x: 0, y: 1)
         gradientLayer.endPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.cornerRadius = 10
         layer.insertSublayer(gradientLayer, at: 0)
         return gradientLayer
     }()
@@ -67,14 +68,14 @@ class AnswerView: UIButton {
     
     func updateGradient(with isRight: Bool) {
         if isRight {
-            gradientLayer.colors = [UIColor.green.cgColor]
+            gradientLayer.colors = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1), #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)].map { $0.cgColor }
         } else {
-            gradientLayer.colors = [UIColor.red.cgColor]
+            gradientLayer.colors = [#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)].map { $0.cgColor }
         }
     }
     
     func updateGradientChosenAnswer() {
-        gradientLayer.colors = [UIColor.gray.cgColor]
+        gradientLayer.colors = [#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)].map { $0.cgColor }
     }
     
     func configure(with bodyAnswer: String, answerOption: String) {

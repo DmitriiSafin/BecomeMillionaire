@@ -52,8 +52,8 @@ class QuestionView: UIView {
     
     func configure(with question: String, questionNumber: Int, price: Int) {
         questionLabel.text = question
-        numberQuestionLabel.text = "Question \(questionNumber)"
-        priceQuestionLabel.text = "\(price) RUB"
+        numberQuestionLabel.text = "Вопрос \(questionNumber)"
+        priceQuestionLabel.text = "\(price) руб"
     }
     
     private func setupUI() {
