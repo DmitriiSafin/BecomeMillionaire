@@ -110,7 +110,7 @@ class AnswerView: UIButton {
             optionAnswerLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             answerButton.topAnchor.constraint(equalTo: topAnchor),
-            answerButton.leftAnchor.constraint(equalTo: leftAnchor),
+            answerButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 40),
             answerButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
             answerButton.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])

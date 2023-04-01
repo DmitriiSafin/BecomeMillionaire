@@ -31,6 +31,9 @@
 		28EBAB9929D5D47B00959AA8 /* ProgressImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9829D5D47B00959AA8 /* ProgressImage.swift */; };
 		28EBAB9C29D5EF0600959AA8 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */; };
 		28EBAB9F29D71BF000959AA8 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBAB9E29D71BF000959AA8 /* GameOverViewController.swift */; };
+		28EBABA529D808A700959AA8 /* Frame 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EBABA429D808A700959AA8 /* Frame 1.png */; };
+		28EBABA829D80C3D00959AA8 /* Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EBABA729D80C3D00959AA8 /* Screen.png */; };
+		28EBABAA29D80CF900959AA8 /* appWork.gif in Resources */ = {isa = PBXBuildFile; fileRef = 28EBABA929D80CF900959AA8 /* appWork.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		28EBAB9829D5D47B00959AA8 /* ProgressImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImage.swift; sourceTree = "<group>"; };
 		28EBAB9B29D5EF0600959AA8 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
 		28EBAB9E29D71BF000959AA8 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		28EBABA429D808A700959AA8 /* Frame 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 1.png"; sourceTree = "<group>"; };
+		28EBABA729D80C3D00959AA8 /* Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen.png; sourceTree = "<group>"; };
+		28EBABA929D80CF900959AA8 /* appWork.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = appWork.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 		28EBAB4F29D3246200959AA8 = {
 			isa = PBXGroup;
 			children = (
+				28EBABA629D80B7200959AA8 /* ReadmeResources */,
 				28EBAB5A29D3246200959AA8 /* BecomeMillionaire */,
 				28EBAB5929D3246200959AA8 /* Products */,
 			);
@@ -106,6 +113,7 @@
 			children = (
 				28EBAB8329D3529000959AA8 /* questions.json */,
 				28EBAB6429D3246300959AA8 /* Assets.xcassets */,
+				28EBABA429D808A700959AA8 /* Frame 1.png */,
 				28EBAB7029D324E000959AA8 /* Sounds */,
 			);
 			path = Resourses;
@@ -209,6 +217,15 @@
 			path = GameOverViewController;
 			sourceTree = "<group>";
 		};
+		28EBABA629D80B7200959AA8 /* ReadmeResources */ = {
+			isa = PBXGroup;
+			children = (
+				28EBABA729D80C3D00959AA8 /* Screen.png */,
+				28EBABA929D80CF900959AA8 /* appWork.gif */,
+			);
+			path = ReadmeResources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,12 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EBABA829D80C3D00959AA8 /* Screen.png in Resources */,
 				28EBAB7C29D324F900959AA8 /* win.mp3 in Resources */,
 				28EBAB7A29D324F900959AA8 /* backgroundSound.mp3 in Resources */,
+				28EBABAA29D80CF900959AA8 /* appWork.gif in Resources */,
 				28EBAB7B29D324F900959AA8 /* timerForResponse.mp3 in Resources */,
 				28EBAB8429D3529000959AA8 /* questions.json in Resources */,
 				28EBAB7829D324F900959AA8 /* winGame.mp3 in Resources */,
 				28EBAB6829D3246300959AA8 /* LaunchScreen.storyboard in Resources */,
+				28EBABA529D808A700959AA8 /* Frame 1.png in Resources */,
 				28EBAB7929D324F900959AA8 /* chosenAnswer.mp3 in Resources */,
 				28EBAB7729D324F900959AA8 /* lose.mp3 in Resources */,
 				28EBAB6529D3246300959AA8 /* Assets.xcassets in Resources */,

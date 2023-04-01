@@ -228,12 +228,12 @@ extension GameProgressViewController {
             millianaireImage.heightAnchor.constraint(equalToConstant: 100),
             millianaireImage.widthAnchor.constraint(equalToConstant: 100),
             
-            messageLabel.topAnchor.constraint(equalTo: millianaireImage.bottomAnchor, constant: 8),
+            messageLabel.topAnchor.constraint(equalTo: millianaireImage.bottomAnchor, constant: 6),
             messageLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15),
             messageLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15),
             messageLabel.heightAnchor.constraint(equalToConstant: 60),
             
-            progressImageStackView.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 8),
+            progressImageStackView.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 6),
             progressImageStackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15),
             progressImageStackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15)
         ])
