@@ -34,6 +34,7 @@
 		28EBABA529D808A700959AA8 /* Frame 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EBABA429D808A700959AA8 /* Frame 1.png */; };
 		28EBABA829D80C3D00959AA8 /* Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EBABA729D80C3D00959AA8 /* Screen.png */; };
 		28EBABAA29D80CF900959AA8 /* appWork.gif in Resources */ = {isa = PBXBuildFile; fileRef = 28EBABA929D80CF900959AA8 /* appWork.gif */; };
+		28EBABAC29D80D9E00959AA8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28EBABAB29D80D9E00959AA8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		28EBABA429D808A700959AA8 /* Frame 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Frame 1.png"; sourceTree = "<group>"; };
 		28EBABA729D80C3D00959AA8 /* Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen.png; sourceTree = "<group>"; };
 		28EBABA929D80CF900959AA8 /* appWork.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = appWork.gif; sourceTree = "<group>"; };
+		28EBABAB29D80D9E00959AA8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		28EBAB4F29D3246200959AA8 = {
 			isa = PBXGroup;
 			children = (
+				28EBABAB29D80D9E00959AA8 /* README.md */,
 				28EBABA629D80B7200959AA8 /* ReadmeResources */,
 				28EBAB5A29D3246200959AA8 /* BecomeMillionaire */,
 				28EBAB5929D3246200959AA8 /* Products */,
@@ -288,6 +291,7 @@
 				28EBAB7C29D324F900959AA8 /* win.mp3 in Resources */,
 				28EBAB7A29D324F900959AA8 /* backgroundSound.mp3 in Resources */,
 				28EBABAA29D80CF900959AA8 /* appWork.gif in Resources */,
+				28EBABAC29D80D9E00959AA8 /* README.md in Resources */,
 				28EBAB7B29D324F900959AA8 /* timerForResponse.mp3 in Resources */,
 				28EBAB8429D3529000959AA8 /* questions.json in Resources */,
 				28EBAB7829D324F900959AA8 /* winGame.mp3 in Resources */,
