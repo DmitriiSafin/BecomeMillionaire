@@ -115,5 +115,4 @@ class AnswerView: UIButton {
             answerButton.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
-    
 }

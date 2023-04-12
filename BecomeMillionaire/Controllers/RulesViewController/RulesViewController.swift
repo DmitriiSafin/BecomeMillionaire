@@ -12,7 +12,6 @@ class RulesViewController: UIViewController {
     private let backgroundView: UIImageView = {
         let background = UIImageView()
         background.image = UIImage(named: "Frame")
-        //background.contentMode = .scaleToFill
         background.translatesAutoresizingMaskIntoConstraints = false
         return background
     }()
@@ -31,7 +30,6 @@ class RulesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
     }
 

@@ -87,6 +87,5 @@ class GameOverViewController: UIViewController {
             logoImageview.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 100),
             logoImageview.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -100)
         ])
-
     }
 }

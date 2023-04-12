@@ -142,6 +142,5 @@ class MainViewController: UIViewController {
             startButton.heightAnchor.constraint(equalToConstant: 60),
         ])
     }
-
 }
 
