@@ -45,7 +45,6 @@ class EveryoneHelpHintView: UIView {
         return gradientLayer
     }()
     
-    
     private var percents = [String: Int]()
     
     override init(frame: CGRect) {

@@ -239,8 +239,8 @@ extension GameProgressViewController {
         ])
         
         switch answerStatus {
+        
         case .right:
-            
             NSLayoutConstraint.activate([
                 takeMoneyButton.topAnchor.constraint(equalTo: progressImageStackView.bottomAnchor, constant: 20),
                 takeMoneyButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
@@ -253,8 +253,8 @@ extension GameProgressViewController {
                 nextQuestionButton.heightAnchor.constraint(equalToConstant: 40),
                 nextQuestionButton.widthAnchor.constraint(equalTo: takeMoneyButton.widthAnchor)
             ])
-        case .wrong:
             
+        case .wrong:
             NSLayoutConstraint.activate([
                 newGameButton.topAnchor.constraint(equalTo: progressImageStackView.bottomAnchor, constant: 20),
                 newGameButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15),
